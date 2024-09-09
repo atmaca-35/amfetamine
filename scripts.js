@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     let hasError = false;
 
     const clickableWords = {
-        // Tanımlamalar...
+         "*+ŕ": [["<span class='yellow'>intransitive</span> *ag-", "<span class='gray'>“to rise”</span>", "<span class='yellow'>noun</span> *agïŕ", "<span class='gray'>“mouth”</span>"], ["<span class='yellow'>transitive</span> *bog-", "<span class='gray'>“to choke”</span>", "<span class='yellow'>noun</span> *boguŕ", "<span class='gray'>“throat”</span>"]],
+        "*+gAk": [["<span class='yellow'>intransitive</span> *dam-", "<span class='gray'>“to drip”</span>", "<span class='yellow'>noun</span> *damgak", "<span class='gray'>“throat”</span>"], ["<span class='yellow'>transitive</span> *or-", "<span class='gray'>“to mow, reap”</span>", "<span class='yellow'>noun</span> *orgak", "<span class='gray'>“sickle”</span>"]],
+        "*+sA-": [["<span class='yellow'>noun</span> *yük", "<span class='gray'>“load”</span>", "<span class='yellow'>intransitive</span> *yükse-", "<span class='gray'>“to rise”</span>"], ["<span class='yellow'>noun</span> *kāp", "<span class='gray'>“vessel”</span>", "<span class='yellow'>transitive</span> *kapsa-", "<span class='gray'>“to include”</span>"]],
     };
 
     try {
@@ -144,7 +146,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function highlightWords(text) {
         const specialWords = {
-            // Tanımlamalar...
+            'bgx': 'Balkan Gagauz Turkish',
+            'kmz': 'Khorasani Turkish',
+            'ota': 'Ottoman Turkish',
+            'otk': 'Old Turkish',
+            'tur': 'Turkish',
+            'crh': 'Crimean Turkish',
+            'sah': 'Yakut',
+            'ybe': 'West Yugur',
+            'tuk': 'Turkmen',
+            'xng': 'Middle Mongolian',
+            'mon': 'Mongolian',
+            'cmg': 'Classical Mongolian',
+            'ptr': 'Proto-Turkic',
         };
 
         let markedText = text;
